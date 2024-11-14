@@ -1,0 +1,34 @@
+.button {
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 2px;
+  color: inherit;
+
+  &:hover {
+    background-color: $color-white;
+    border-color: $color-white;
+    color: $color-accent;
+  }
+
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color: $color-black;
+    color: $color-accent;
+  }
+
+  &:active {
+    background-color: $color-white;
+    border-color: $color-white;
+    color: $color-primary;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}

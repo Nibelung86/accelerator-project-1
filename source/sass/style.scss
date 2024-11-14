@@ -1,4 +1,17 @@
 // Vendor
 // ---------------------------------
 
-@import "vendor/normalize";
+@import "common/variables";
+@import "common/mixins";
+@import "common/fonts";
+@import "common/global";
+@import "common/visually-hidden";
+
+
+@import "blocks/button";
+@import "blocks/container";
+@import "blocks/section-title";
+@import "blocks/hero";
+@import "blocks/about";
+@import "blocks/features";
+

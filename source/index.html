@@ -5,27 +5,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUPERGYM</title>
+    <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
   <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
-    <div data-test="price">price</div>
-    <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
-    <div data-test="features">features</div>
-    <div data-test="offers">offers</div>
-    <div data-test="faq">faq</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
+    <main>
+      <h1 class="visually-hidden">Supergym.</h1>
+      <!-- Промо-блок -->
+      <section class="hero" data-test="hero">
+        <h2 class="visually-hidden">О нашем фитнес-цетре.</h2>
+        <div class="hero__container container">
+          <header class="hero__header">
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1366px)" srcset="img/logo.svg" width="130" height="26">
+              <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/logo.svg" width="110" height="22">
+              <img class="hero__logo" src="img/logo.svg" width="100" height="20" alt="Логотип SUPERGYM.">
+            </picture>
+            <a class="hero__phone-link" href="tel:+78005555555">8 800 555-55-55</a>
+          </header>
+          <div class="hero__text-content">
+            <ul class="hero__activity-list">
+              <li class="hero__activity-item">Тренажёрный зал</li>
+              <li class="hero__activity-item">Групповые занятия</li>
+              <li class="hero__activity-item">Кардио-зона</li>
+            </ul>
+            <p class="hero__title"><span>Омск</span>Фитнес центр</p>
+            <a class="hero__abonement-link button button--light" href="/">Купить абонемент</a>
+          </div>
+          <picture>
+            <source type="image/webp" media="(min-width: 1366px)" srcset="img/hero-desktop.webp 1x, img/hero-desktop@2x.webp 2x" width="500" height="524">
+            <source type="image/webp" srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x" width="324" height="390">
+            <source type="image/jpeg" media="(min-width: 1366px)" srcset="img/hero-desktop.jpg 1x, img/hero-desktop@2x.jpg 2x" width="500" height="524">
+            <img class="hero__image" src="img/hero-tablet.jpg" srcset="img/hero-tablet@2x.jpg 2x" width="324" height="390" alt="Логотип SUPERGYM.">
+          </picture>
+        </div>
+      </section>
+      <section class="about" data-test="about">
+        <div class="about__container container">
+          <div class="about__text-content">
+            <h2 class="about__title section-title">Тренажёрный зал</h2>
+            <p class="about__subtitle">Просторный зал площадью 900 кв/м</p>
+            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+          </div>
+        </div>
+      </section>
+      <div data-test="price">price</div>
+      <div data-test="games">games</div>
+      <div data-test="juri">juri</div>
+      <section class="features" data-test="features">
+        <div class="features__container container">
+          <h2 class="features__title section-title">Наши преимущества</h2>
+          <ul class="features__list">
+            <li>
+              <p><span>900</span>кв/м</p>
+              <p>Площадь</p>
+              <p>Занимайтесь без очередей и&nbsp;толкучки</p>
+            </li>
+            <li>
+              <p><span>70</span>машин</p>
+              <p>Собственная парковка</p>
+              <p>Вы всегда найдёте место для&nbsp;своей машины на нашей парковке</p>
+            </li>
+            <li>
+              <h3><span>100</span>Тренажёров</h3>
+              <p>Современные тренажёры на&nbsp;все&nbsp;группы мышц</p>
+            </li>
+            <li>
+              <p><span>350</span>мест</p>
+              <p>Комфорт</p>
+              <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+            </li>
+            <li>
+              <p><span>5+</span>лет</p>
+              <p>Тренерский опыт</p>
+              <p>Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div data-test="offers">offers</div>
+      <div data-test="faq">faq</div>
+      <div data-test="reviews">reviews</div>
+      <div data-test="form">form</div>
+    </main>
+    <footer data-test="footer">
+
+    </footer>
     <script type="module" src="js/main.js"></script>
   </body>
 
