@@ -14,5 +14,12 @@
     font-size: 54px;
     line-height: 54px;
   }
+
+  &--large {
+    @media (min-width: $tablet) {
+      font-size: 54px;
+      line-height: 54px;
+    }
+  }
 }
 

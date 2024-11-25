@@ -26,12 +26,11 @@
   @media (min-width: $desktop) {
     margin-bottom: 50px;
   }
-
-
 }
 
 .features__list {
   @include list-reset;
+
   display: grid;
   gap: 35px 0;
 
@@ -197,7 +196,7 @@
   }
 }
 
-.features__list p:nth-of-type(2){
+.features__list p:nth-of-type(2) {
   margin: 0;
   color: $color-primary;
   font-size: 18px;
@@ -219,11 +218,13 @@
 .features__list p:last-of-type {
   @media (min-width: $tablet) {
     grid-column: -1/ span -1;
+
     // justify-self: flex-end;
   }
 
   @media (min-width: $desktop) {
     grid-column: -1/ span -1;
+
     // justify-self: flex-end;
   }
 }
@@ -234,7 +235,6 @@
   line-height: 64px;
   background: linear-gradient(128deg, #d10a42 0%, #0041ca 45.89%);
   background-clip: text;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   @media (min-width: $tablet) {

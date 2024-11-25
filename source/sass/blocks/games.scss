@@ -1,0 +1,29 @@
+.games__container {
+  padding: 25px 15px;
+
+  @media (min-width: $tablet) {
+    padding: 60px 45px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 100px 103px;
+  }
+}
+
+.games__card {
+  background-color: #ed0233;
+  color: $color-white;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: auto max-content;
+  }
+}
+
+.games__info {
+  padding: 40px;
+}
+
+.games__title {
+  margin: 0;
+}

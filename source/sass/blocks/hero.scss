@@ -48,6 +48,7 @@
 
 .hero__phone-link {
   @include link-reset;
+  position: relative;
   font-family: inherit;
   font-size: 22px;
   font-weight: 900;
@@ -63,6 +64,35 @@
     font-size: 26px;
     line-height: 26px;
   }
+
+  &:hover {
+    color: #1c3374;
+    opacity: 0.5;
+  }
+
+  &:focus {
+    color: $color-button-additional;
+  }
+
+  &:active {
+    color: $color-primary;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      left: 0;
+      bottom: -5px;
+      background-color: currentColor;
+    }
+  }
+
+  &--disabled,
+  &:disabled {
+    color: f8f9fc;
+    opacity: 0.5;
+  }
 }
 
 .hero__text-content {
@@ -71,7 +101,6 @@
   gap: 48px 21px;
   padding-top: 48px;
   align-items: flex-end;
-  justify-content: flex-end;
 
   @media (min-width: $tablet) {
     grid-template-columns: auto 185px;
@@ -87,6 +116,7 @@
 
 .hero__activity-list {
   @include list-reset;
+
   display: flex;
   flex-direction: column;
   text-align: right;
@@ -155,6 +185,7 @@
 
 .hero__abonement-link {
   @include link-reset;
+
   grid-column: 1/-1;
   padding: 22px;
 
